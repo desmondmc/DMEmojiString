@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <DMEmojiString/DMEmojiString.h>
 
 @interface DMEmojiStringTests : XCTestCase
 
@@ -22,16 +23,18 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testContainsEmojiTrue {
+    XCTAssert([@"😉" containsEmoji]);
+    XCTAssert([@"🥶" containsEmoji]);
+    XCTAssert([@"🤟🏾" containsEmoji]);
+    XCTAssert([@"🤗asdasd💋" containsEmoji]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testContainsEmojiFalse {
+    XCTAssert(![@"Dog" containsEmoji]);
+    XCTAssert(![@"       " containsEmoji]);
+    XCTAssert(![@"There a no emojis here" containsEmoji]);
+    XCTAssert(![@"<<....,,,######%%%^^^^" containsEmoji]);
 }
 
 @end

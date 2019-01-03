@@ -10,6 +10,7 @@
 		7A15660A21DD68D200B2F2CC /* DMEmojiString.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A15660021DD68D200B2F2CC /* DMEmojiString.framework */; };
 		7A15660F21DD68D200B2F2CC /* DMEmojiStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A15660E21DD68D200B2F2CC /* DMEmojiStringTests.m */; };
 		7A15661121DD68D200B2F2CC /* DMEmojiString.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A15660321DD68D200B2F2CC /* DMEmojiString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A15662121DD6D5500B2F2CC /* DMEmojiString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A15662021DD6D5500B2F2CC /* DMEmojiString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7A15660921DD68D200B2F2CC /* DMEmojiStringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMEmojiStringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A15660E21DD68D200B2F2CC /* DMEmojiStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMEmojiStringTests.m; sourceTree = "<group>"; };
 		7A15661021DD68D200B2F2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A15662021DD6D5500B2F2CC /* DMEmojiString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMEmojiString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				7A15660321DD68D200B2F2CC /* DMEmojiString.h */,
+				7A15662021DD6D5500B2F2CC /* DMEmojiString.m */,
 				7A15660421DD68D200B2F2CC /* Info.plist */,
 			);
 			path = DMEmojiString;
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A15662121DD6D5500B2F2CC /* DMEmojiString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
